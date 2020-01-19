@@ -1,11 +1,11 @@
 'use strict';
 
 module.exports = function(app, getTestEnumCallBack) {
-    var test = require('../controllers/controllers');
+    var controller = require('../controllers/controllers');
 
     app.route('/')
         .get(function(req, res) {
-            test.getTestEnumCallback(getTestEnumCallBack);
-            test.testa(req, res);
+            // controller.getTestEnumCallback(getTestEnumCallBack);
+            controller.root(req, res);
         })
 };
