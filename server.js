@@ -11,10 +11,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 // Routes
-const interfaceRoutes = require('./mockApis/ApiTestAppB/routes/routes');
-const mockApiTestAppBRoutes = require('./mockApis/ApiTestAppB/routes/routes');
-interfaceRoutes(app);
+// const interfaceRoutes = require('./mockApis/ApiTestAppB/routes/routes');
+// interfaceRoutes(app);
 
+const mockApiTestAppBRoutes = require('./mockApis/ApiTestAppB/routes/routes');
 let testEnum = 'a';
 function getTestEnum() {
     return testEnum;
