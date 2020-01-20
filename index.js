@@ -1,4 +1,8 @@
 const request = require("request");
+const StatsD = require('node-dogstatsd').StatsD;
+
+const dogstatsd = new StatsD();
+dogstatsd.increment('page.views')
 
 console.log(process.env.API_TEST_APP_A_ROOT + "/");
 
