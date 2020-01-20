@@ -1,5 +1,5 @@
 const request = require("request");
-const StatsD = require('node-dogstatsd').StatsD;
+const StatsD = require('hot-shots');
 
 const dogstatsd = new StatsD();
 dogstatsd.increment('page.views')
